@@ -1,0 +1,68 @@
+// --------------------style for header page ----------------------//
+
+header{
+    background-color: $bg-darkblue;
+}
+
+nav a{
+    position:relative;
+    display:inline-block;
+    padding:0 30px;
+    color:$text-white;
+    font-size:17px !important;
+    letter-spacing:-.5px;
+    text-decoration:none;}
+
+nav a:hover{
+    color:$light-blue;
+}
+.btn-6 a:before,
+ a:after{
+    content:"";
+    display:block;
+}
+.btn-6 a{
+    overflow: hidden;
+    z-index:2
+}
+.btn-6 a:before{
+    position:absolute;
+    right:100%;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color:$light-blue;
+    z-index:-1; opacity:1;
+    -webkit-transition:all .2s ease-out;
+    -o-transition:all .2s ease-out;
+    transition:all .2s ease-out;
+    border-right:2px solid $bg-darkblue;
+}
+.btn-6 a:hover:before{
+    opacity:1; right:0;
+}
+ nav .active:hover{
+    color:$text-white !important;
+}
+
+// .navbar-brand {
+//     display: inline-block;
+//     position: relative;
+//     overflow: hidden;
+//   }
+//   .navbar-brand .text-animation {
+//     display: inline-block;
+//     animation: animateText 2s infinite;
+//     color: $light-blue; /* Set light blue color */
+//   }
+//   @keyframes animateText {
+//     0% { transform: translateY(0); }
+//     50% { transform: translateY(-20px); }
+//     100% { transform: translateY(0); }
+//   }
+
+.navbar-brand:hover{
+    color: $light-blue !important;
+}
+
+

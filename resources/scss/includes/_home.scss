@@ -1,0 +1,488 @@
+// ------------------- style for home section ----------------//
+.home-bg{
+    background-color: $bg-darkblue;
+}
+
+.home {
+
+    .social {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.4rem;
+        margin-top: 1.7rem;
+
+        a {
+            color: $light-blue !important;
+            border: 1.6px solid $light-blue;
+            border-radius: 50%;
+            padding: .45rem;
+            text-align: center;
+            font-size: 1.2rem;
+
+            &:hover {
+                color: black !important;
+                background-color: $light-blue;
+                box-shadow: 0 0 20px $light-blue;
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
+
+    .para-text{
+        font-size: 18px;
+    }
+
+}
+// ----------- animation for home-content-section ----------------//
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.zoom-effect {
+    overflow: hidden;
+    position: relative;
+}
+
+.zoom-effect img {
+    transition: transform 0.3s ease;
+}
+
+.zoom-effect:hover img {
+    transform: scale(1.1);
+}
+
+
+// ------------------ animation for dev iamge ------------------------//
+// .home-contenet {
+//     animation: fadeIn 1.5s ease-out forwards;
+// }
+.developerImage {
+    .devImage {
+        color: $light-blue !important;
+        width: 500px;
+        // height: 400px;
+
+        &:hover {
+            color: black !important;
+            // background-color: $light-blue;
+            // box-shadow: 0 0 20px $light-blue;
+            transition: all .3s ease-in-out;
+        }
+    }
+}
+.typing-text::after {
+    content: "|";
+    animation: blink ease 1s infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 0;
+    } 50% {
+      opacity: 1;
+    }
+  }
+  .typing-text span.highlight {
+    color: #00E8F8;
+  }
+//   --------------- animation for about section -------------------//
+  @keyframes colorChange {
+    0% {
+        color: $bg-darkblue;
+    }
+    50% {
+        color: $light-blue;
+    }
+    100% {
+        color: $bg-darkblue;
+    }
+}
+
+.animated-text3 {
+    animation: colorChange 2s infinite;
+}
+
+.devImage2{
+    width: 500px;
+}
+// .devImage_2{
+//     width: 600px;
+//     height: 400px;
+// }
+// /* Keyframes for fadeInLeft animation */
+// @keyframes fadeInLeft {
+//     from {
+//         opacity: 0;
+//         transform: translateX(-50px);
+//     }
+//     to {
+//         opacity: 1;
+//         transform: translateX(0);
+//     }
+// }
+
+// @keyframes fadeInRight {
+//     from {
+//         opacity: 0;
+//         transform: translateX(50px);
+//     }
+//     to {
+//         opacity: 1;
+//         transform: translateX(0);
+//     }
+// }
+
+
+.zoom-effect.about-image1,.about-image2 {
+    animation: fadeInLeft 2s ease forwards;
+}
+
+
+.aboutContent,.personalInfo {
+    animation: fadeInRight 2s ease forwards;
+}
+
+// ------------------------ Education and Experiece section -------------------//
+
+.eduExperience{
+    background-color: $bg-darkblue;
+    opacity: 1;
+}
+.time{
+    background-color: $abt-clr;
+}
+.icon{
+    border-radius: 50%;
+    width: 50px;
+    height: 40px;
+    background-color: $light-blue;
+}
+
+.off-line{
+    border-bottom: 1px solid;
+}
+.line-btm{
+    border-bottom: 1px solid;
+}
+.st-line{
+    border-left: 2px solid;
+}
+.education{
+    span{
+        background-color: $light-blue !important;
+        border-radius: 50%;
+        width: 45px;
+        height: 40px;
+    }
+}
+//--------------------- style for skill section ---------------//
+
+.skills{
+    background-color:hsl(216, 19%, 15%);
+    opacity: 0.8;
+}
+.skill-main{
+    width: 100%;
+    @include media-min-md{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 30px;
+        grid-column-gap: 50px;
+    }
+
+
+}
+.skill-bar{
+    margin-top: 2.3rem;
+}
+.skill-main h3{
+    margin-bottom: 2rem;
+    font-size: 24px;
+    text-align: center;
+}
+.skill-left .skill-bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.skill-left .skill-bar .bar{
+    width: 100%;
+    height: 10px;
+    background-color: $abt-clr;
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.skill-bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left:0;
+    background: $light-blue;
+    border-radius: 25px;
+    box-shadow: 0 0 .7rem #12f7ff;
+}
+
+.skill-bar .bar .html{
+    width: 72% ;
+    animation: html 2s;
+}
+
+.skill-bar .bar .css{
+    width: 70% ;
+    animation: css 3s;
+}
+
+.skill-bar .bar .javascript{
+    width: 80% ;
+    animation: javascript 4s;
+}
+.skill-bar .bar .bootstrap{
+    width: 82% ;
+    animation: bootstrap 5s;
+}
+.skill-bar .bar .php{
+    width: 90% ;
+    animation: php 6s;
+}
+.skill-bar .bar .dart{
+    width: 85% ;
+    animation: dart 7s;
+}
+.skill-bar .bar .sql{
+    width: 95% ;
+    animation: sql 7s;
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:72%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:70%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:80%;
+    }
+}
+@keyframes bootstrap{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:82%;
+    }
+}
+@keyframes php{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:90%;
+    }
+}
+@keyframes dart{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:85%;
+    }
+}
+@keyframes sql{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:95%;
+    }
+}
+
+.skill1,.skill2,.skill3,.skill4,.skill5,.skill6 {
+    width: 100px;
+    height: 100px;
+    border: 7px solid $light-blue;
+    border-radius: 50%;
+    padding: 2.5rem;
+    box-shadow: 0 0 .7rem #12f7ff;
+}
+
+
+// ------------------- style for portfolio section --------------------//
+
+.fillter-buttons{
+    margin: 2rem;
+    text-align: center;
+}
+.fillter-buttons .btn1{
+    background: none;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: .4px;
+    margin-left: 1.3rem;
+}
+.fillter-buttons .btn1:hover{
+    color: #00E8F8 !important;
+}
+.portfolio-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 2rem;
+}
+.port-box{
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+    background: #292e33;
+    display: flex;
+    grid-template-rows: 1fr auto;
+    align-items: center;
+    border: 2px solid #00eafb !important;
+    box-shadow: 0 0 .7rem #12f7ff;
+}
+
+.port-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+}
+.port-image img{
+    width: 100%;
+    opacity: .5s;
+    height: 100%;
+    transition: .5s;
+}
+
+.port-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: linear-gradient(rgba(0,0,0,.2),#12f7ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.5s;
+    padding: 0 2rem;
+}
+.port-box:hover .port-content{
+    opacity: 1;
+}
+
+.port-box {
+    &:hover {
+        .port-image img {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.port-content h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.port-content p{
+    font-size: .8rem;
+    margin: 5px 0 15px 0;
+}
+
+.port-content a{
+    background: $white;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #12f7ff;
+    outline: 2px solid $white;
+}
+
+.port-content a i{
+    font-size: 1.3rem;
+    color: #00eafb;
+}
+.image4{
+    height: 300px !important;
+}
+
+// ------------------------ contact section start ---------------------//
+
+.form-section{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: $white;
+    // border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    height: 150px;
+}
+
+.btn {
+    background-color:$bg-darkblue;
+    color: $white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: $light-blue;
+    color: $white;
+}
+

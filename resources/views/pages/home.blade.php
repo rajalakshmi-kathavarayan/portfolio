@@ -296,7 +296,7 @@
                         <div class="port-content">
                             <h3 class="text-white">Woman's & Men's salon website</h3>
                             <p class="text-white">Designed and developed a responsive women's salon website featuring services, portfolio, contact us, and about us sections using HTML, JavaScript, Bootstrap, and SCSS to ensure compatibility across all screen sizes</p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/rajalakshmi-kathavarayan/woman-salon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
                     <div class="port-box rounded-3 mix web">
@@ -306,7 +306,7 @@
                         <div class="port-content">
                             <h3 class="text-white">Portfolio website</h3>
                             <p class="text-white">The portfolio website was crafted using the Laravel framework, incorporating JavaScript for interactivity, Bootstrap for responsive design, and SCSS for enhanced styling, resulting in a seamless user experience    </p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/rajalakshmi-kathavarayan/portfolio"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
                     <div class="port-box rounded-3 mix web">
@@ -316,7 +316,7 @@
                         <div class="port-content">
                             <h3 class="text-white">Medcare Website</h3>
                             <p class="text-white">Crafted a responsive Medcare website showcasing services, portfolio, contact us, and about us sections utilizing HTML, JavaScript, Bootstrap, and SCSS for seamless adaptability across various screen sizes</p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/rajalakshmi-kathavarayan/medcare-website"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
                     <div class="port-box rounded-3 mix mobile ">
@@ -336,7 +336,7 @@
                         <div class="port-content">
                             <h3 class="text-white">Online Education website</h3>
                             <p class="text-white">Developed a responsive online e-learning website and education system using HTML, CSS, and Bootstrap</p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/rajalakshmi-kathavarayan/online-education"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
                     <div class="port-box rounded-3 mix mobile ">

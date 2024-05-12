@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('pages.home');
+    return view('pages.index');
 });
 
 Route::get('/contact',[ContactController::class,'show'])->name('contact.show');

@@ -11,7 +11,7 @@ class ContactController extends Controller
 {
     public function show()
     {
-        return view('home');
+        return view('index');
     }
 
     public function send()

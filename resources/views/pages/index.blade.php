@@ -384,9 +384,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="up-arrow-icon text-end pb-5 mx-2 px-4 ">
+                {{-- <div class="up-arrow-icon text-end pb-5 mx-2 px-4 ">
                     <a href="#home"><i class="fas fa-arrow-up bg rounded-circle px-3 py-2 text-white"></i></a>
-                </div>
+                </div> --}}
         </section>
         {{-- =========================== contact section end =================== --}}
     </main>
